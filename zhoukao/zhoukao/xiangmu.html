@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{margin:0;padding:0;}
+    a{
+        text-decoration:none;
+    }
+        #header{
+           height:40px;
+           background:rgba(51,51,51,1);
+        }
+        #header a{
+            font-size:14px;
+            color:#bbbbbb; 
+            line-height:40px;
+        }
+        #header a:hover{
+            color:#fff;
+        }
+        #d1{
+            width:1200px;
+            margin:auto;
+            display:flex;
+            justify-content:space-between;
+        }
+        #d1>.a2{
+            width:400px;
+             display:inline-flex;
+            justify-content:space-between;
+        }
+        #d1>.a2 span{
+            color:#fff;
+        }
+        #d1>.a2 span:hover{
+                color:yellow;
+            }
+        #body{
+                width:1200px;
+                margin:auto;
+            }
+        #d2{
+            height:100px;
+            display:flex;
+            justify-content:space-between;
+        }
+        #d2>.a1>h1{
+                font-size:26px;
+                color:#f52f3e;
+                margin-top:22px;
+            }
+        #d2>.a1>span{
+            font-size:14px;
+        }
+        #d2>.a2{
+            width:600px;
+            line-height:100px;
+            display:inline-flex;
+            justify-content:space-between;
+            position:relative;
+        }
+        #d2>.a2 a{
+            font-size:16px;
+            color:#333;
+        }
+        #d2>.a2 a:hover{
+            color:rgb(245,47,63);
+        }
+        #d2>.a3{
+            width:320px;
+            line-height:100px;
+        }
+        #d2>.a3 input{
+            width:235px;
+            height:45px;
+            border:0;
+            border-bottom:1px solid #666;
+            font-size:14px;
+            color:rgb(153,153,153);
+        }
+        #d2>.a3 img{
+            width:22px;
+            height:22px;
+            margin-right:10px;
+        }
+        }
+        .block{
+            display:block;
+        }
+        #d2>.a2 .b1{
+            width:400px;
+            height:400px;
+            position:absolute;
+            top:100px;
+            left:10px;
+            border:1px solid #666;
+            display:flex;
+            justify-content:space-around;
+            display:none;
+            background:#fff;
+                  }
+        #d2>.a2>.b1>.z1 div{
+            width:185px;
+            height:55px;
+             display:flex;
+            justify-content:space-around;
+            margin:20px 0;
+
+        }
+         #d2>.a2>.b1 img{
+             width:30px;
+             height:30px;
+             padding:15px;
+         }
+          #d2>.a2>.b1 span{
+               line-height:55px;
+          }
+          #d2>.a2>.b1>div span:hover{
+              color:rgb(245, 47, 62);
+          }
+          #d3{
+              height:60px;
+              line-height:60px;
+          }
+          #d3 a{
+              color:#666;
+          }
+          #footer{
+              display:flex;
+              justify-content:space-between;
+          }
+          #d4>.f1>img{
+            width:432px;
+            height:432px;
+          }
+          #d4{
+              width:520px;
+              height:432px;
+              display:flex;
+              justify-content:space-between;
+          }
+          #d4>.f2>img{
+              width:80px;
+              height:80px;
+          }
+          #d4>.f2{
+              display:flex;
+              flex-direction:column;
+              justify-content:space-between;
+          }
+          #d5{
+              width:615px;
+          }
+          #d5>h3{
+              font-size:26px;
+              color:#333;
+          }
+          #d5>p{
+              font-size:14px;
+              color:#999;
+              margin:15px 0;
+          }
+          #d5>.e1{
+              height:36px;
+              background:#e12936;
+              line-height:36px;
+              position:relative;
+          }
+          #d5 span{
+              color:#fff;
+              margin-left:15px;
+          }
+          #d5 a{
+              color:#fff;
+              position:absolute;
+              right:10px;
+          }
+          #d5>.e2{
+              height:192px;
+              background:#f6f6f6;
+          }
+          #d5>.e2>.w2{
+              margin:20px 0;
+          }
+          #d5>.e2>.w3{
+              margin:20px 0;
+          }
+           #d5>.e2>.w4{
+              margin:20px 0;
+          }
+          #d5>.e2>.w1>span:nth-child(1),#d5>.e2>.w1>span:nth-child(4){
+              font-size:16px;
+                color:#666;
+                
+          }
+          #d5>.e2>.w1>span:nth-child(2){
+              font-size:22px;
+              color:#f00;
+          }
+          #d5>.e2>.w1>span:nth-child(3){
+              font-size:32px;
+              color:#f00;
+          }
+          #d5>.e2>.w2>span:nth-child(1){
+              font-size:16px;
+              color:#666;
+          }
+          #d5>.e2>.w2>span:not(:nth-child(1)){
+              font-size:16px;
+              color:#f00;
+          }
+          #d5>.e2>.w3>span{
+              font-size:16px;
+              color:#666;
+          }
+          #d5>.e2>.w4>span{
+              font-size:16px;
+              color:#666;
+          }
+          #d5>.e3 img{
+              width:50px;
+              height:50px;
+          }
+          #d5>.e3{
+              height:50px;
+              margin-top:20px;
+          }
+          #d5>.e3 span{
+              font-size:16px;
+              color:#666;
+          }
+          #d5>.e4 {
+              width:300px;
+              display:flex;
+              justify-content:space-around;
+              margin-top:40px;
+          }
+           #d5>.e4>div{
+               width:47px;
+               height:30px;
+               text-align:center;
+               line-height:30px;
+
+           }
+          #d5>.e4>div:nth-child(2),#d5>.e4>div:nth-child(3),#d5>.e4>div:nth-child(4){
+              border:1px solid #666;
+          }
+          #d5>.e4>div:last-child{
+              color:#ccc;
+                border:1px dashed #ccc;
+          }
+          #d5>.e5{
+              margin-top:20px;
+          }
+          #d5>.e5>span{
+              font-size:16px;
+              color:#666;
+              margin-right:15px;
+          }
+          #d5>.e5 button{
+              width:35px;
+              height:35px;
+          }
+
+           #d5>.e6{
+               display:flex;
+               margin-top:20px;
+           }
+           #d5>.e6 div{
+            width:168px;
+            height:45px;
+            border-radius:5px;
+            border:1px solid #f00;
+            text-align:center;
+            line-height:45px;
+           }
+           #d5>.e6>div:first-child{
+               color:#f52f3e;
+               margin:0 15px;
+           }
+           #d5>.e6>div:first-child:hover{
+               background:#f52f3e;
+               color:#fff;
+           }
+           #d5>.e6>div:last-child{
+               background:#f52f3e;
+               color:#fff;
+           }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="d1">
+            <div class="a1">
+                 <a href="">亮亮原型-专注于提升Axure产品原型的效率与体验</a>
+             </div>
+             <div class="a2">
+                <a href=""><span>下载原型</span></a>
+                <a href="">登陆</a>
+                <a href="">注册</a>
+                <a href="">我的订单</a>
+                <a href="">在线客服</a>
+                <a href="">帮助中心</a>
+             </div>
+        </div>
+    </div>
+    <div id="body">
+        <div id="d2">
+            <div class="a1">
+                <h1>亮亮电商</h1>
+                <span>点击这里&nbsp;&nbsp;下载原型</span>
+            </div>
+            <div class="a2">
+                <a href="">首页</a>
+                <a id="c1" href="">居家</a>
+                <div class="b1"  >
+                    <div class="z1">
+                        <div><span>床品四件套</span>
+                     <img src="images/icon_2nav_rpt_u105.png" alt=""></div>
+                     <div><span>床品四件套</span>
+                     <img src="images/icon_2nav_rpt_u105.png" alt=""></div>
+                     <div><span>床品四件套</span>
+                     <img src="images/icon_2nav_rpt_u105.png" alt=""></div>
+                     <div><span>床品四件套</span>
+                     <img src="images/icon_2nav_rpt_u105.png" alt=""></div>
+                     <div><span>床品四件套</span>
+                     <img src="images/icon_2nav_rpt_u105.png" alt=""></div>
+                    </div>
+                    <div class="z1">
+                        <div><span>床品四件套</span>
+                     <img src="images/icon_2nav_rpt_u105.png" alt=""></div>
+                     <div><span>床品四件套</span>
+                     <img src="images/icon_2nav_rpt_u105.png" alt=""></div>
+                     <div><span>床品四件套</span>
+                     <img src="images/icon_2nav_rpt_u105.png" alt=""></div>
+                     <div><span>床品四件套</span>
+                     <img src="images/icon_2nav_rpt_u105.png" alt=""></div>
+                     <div><span>床品四件套</span>
+                     <img src="images/icon_2nav_rpt_u105.png" alt=""></div>
+                    </div>
+                </div>
+                <a href="">服装</a>
+                <a href="">电器</a>
+                <a href="">洗护</a>
+                <a href="">饮食</a>
+                <a href="">餐厨</a>
+                <a href="">婴童</a>
+            </div>
+            <div id="" class="a3">
+                <input type="text"  placeholder="输入关键字进行搜索">
+                <img src="images/1.png" alt="">
+                <img src="images/2.png" alt="">
+            </div>
+        </div>
+        <hr>
+        <div id="d3">
+            <a href="">首页</a>&gt;
+            <a href="">餐厨</a>&gt;
+            <a href="">趣味粉彩陶瓷马克杯</a>
+        </div>
+        <div id="footer">
+           <div id="d4">
+            <div class="f1">
+                <img src="images/p7.jpg" class="my-big" alt="">
+            </div>
+            <div class="f2">
+                <img src="images/p8.png" class="my-small"
+                data-target="images/p8.png" alt="">
+                <img src="images/p4.jpg" 
+                class="my-small" 
+                data-target="images/p4.jpg" alt="">
+                <img src="images/p5.jpg"
+                class="my-small" 
+                data-target="images/p5.jpg" alt="">
+                <img src="images/p6.jpg"
+                data-target="images/p6.jpg" 
+                class="my-small" alt="">
+                <img src="images/p7.jpg" 
+                data-target="images/p7.jpg"
+                class="my-small" alt="">
+            </div>
+          </div>
+          <div id="d5">
+            <h3>趣味粉彩陶瓷马克杯</h3>
+            <p>原创设计，现代时尚</p>
+            <div class="e1">
+                <span>亮亮秒杀</span>
+                <span>距离结束还剩</span>
+                <span>04时30分30秒</span>
+                <a href="">更多抢购&gt;</a>
+            </div>
+            <div class="e2">
+                <div class="w1">
+                    <span>价格</span>
+                    <span>￥</span>
+                    <span>70</span>
+                    <span><del>￥88</del></span>
+                </div>
+                <div class="w2">
+                    <span>领券</span>
+                    <span>满99减20</span>
+                    <span>立即领取&gt;</span>
+                </div>
+                <div class="w3">
+                    <span>积分</span>
+                    <span>购买可得50积分</span>
+                </div>
+                <div class="w4">
+                    <span>服务</span>
+                    <span>
+                    <img src="images/u2539.png" alt="">
+                       30天无忧退换货 
+                    </span>
+                    <span>
+                      <img src="images/u2539.png" alt="">
+                       48小时急速退款
+                    </span>
+                    <span>
+                    <img src="images/u2539.png" alt="">
+                    满69元包邮费
+                    </span>
+                </div>
+            </div>
+            <div class="e3">
+                <span>颜色</span>
+                <span>
+                    <img src="images/p6.jpg" alt="">
+                </span>
+                 <span>
+                    <img src="images/p6.jpg" alt="">
+                </span>
+                 <span>
+                    <img src="images/p6.jpg" alt="">
+                </span>
+            </div>
+            <div class="e4">
+                <div>
+                    尺寸
+                </div>
+                <div>
+                    小
+                </div>
+                <div>
+                    中
+                </div>
+                <div>
+                    大
+                </div>
+               <div>
+                    特大
+                </div>
+            </div>
+            <div class="e5">
+                <span>数量</span>
+                  <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+            </div>
+            <div class="e6">
+                <div>
+                    立即购买
+                </div>
+                <div>
+                    加入购物车
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+		$("#c1")
+		.hover(
+			function(){
+				$(this).next().css("display","flex")
+			},
+            function(){
+				$(this).next().css("display","")
+			}
+		)
+        $(".b1")
+		.hover(
+			function(){
+				$(this).css("display","flex")
+			},
+            function(){
+				$(this).css("display","")
+			}
+		)
+        $(".f2").mouseover(function(e){
+            var $img=$(e.target);
+            if($img.is(".my-small")){
+                $(".my-big").attr("src",$img.attr("data-target"))
+            }
+        })
+        var btns=d5.getElementsByTagName("button");
+        for(var btn of btns){
+        btn.onclick=function(){
+            var span1=this.parentNode;
+				var span=span1.children[2];
+            var n=parseInt(span.innerHTML);
+				if(this.innerHTML=="+"){
+					n++;
+				}else if(n>1){
+					n--;
+				}
+				span.innerHTML=n;
+        }
+        }
+    </script>
+</body>
+</html>
